@@ -15,7 +15,7 @@ const PlayersCard: React.FC<Props> = ({ id, TeamName, events, imageUrl, sports }
         {/* Card content */}
         <div className='image flex items-center flex-col'>
           <img src={imageUrl} alt={TeamName} className="w-full h-[385px] object-cover" />
-          <h2 className="text-lg self-start font-semibold pt-1">{TeamName}</h2>
+          <h2 className="text-lg self-start capitalize font-semibold py-1">{TeamName}</h2>
         </div>
         <div className="self-start bg-[#292B32] pt-1 mb-2 h-[54px] rounded-md flex justify-around">
         

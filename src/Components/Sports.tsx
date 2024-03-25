@@ -1,5 +1,6 @@
 import PlayersCard from "./PlayersCard";
-import data from "../../data";
+import data,{ banner } from "../../data";
+import Advertisement from "./Advertisement";
 
 const Sports: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Sports: React.FC = () => {
         {data.map((item, index) => (
           <PlayersCard key={index} {...item} />
         ))}
+        <Advertisement {...banner}/>
       </div>
       <div className=" flex justify-center items-center pt-10">
       <button className="bg-[#2C9CF0] px-8 rounded-md py-2  ">
