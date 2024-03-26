@@ -40,15 +40,13 @@ interface DataItem {
               imageUrl: "/player2.jpg",
               sports:"baseball",
             },
-           
-    // Add more objects as needed
+
   ];
   
   export const banner:Advertisement={
     imageUrl:"/banner.png",
     title:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   };
-  
-  // Export the data array
+
   export default data;
   
