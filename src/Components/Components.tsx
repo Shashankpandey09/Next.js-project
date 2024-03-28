@@ -2,15 +2,15 @@
 import { useState } from 'react';
 import Sports from '@/Components/Sports';
 import SpotLight from '@/Components/CollectionSpotlight';
-import { useTheme } from 'next-themes';
+
 
 const Components = () => {
-  const { theme, setTheme } = useTheme();
+
   const [isLightTheme, setIsLightTheme] = useState(true);
 
   const toggleTheme = () => {
     setIsLightTheme(!isLightTheme);
-    setTheme(isLightTheme ? 'dark' : 'light');
+
   };
 
   return (

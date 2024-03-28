@@ -21,7 +21,7 @@ const Sports: React.FC<Props> = ({isLightTheme}) => {
         <Advertisement {...banner}/>
       </div>
       <div className=" flex justify-center items-center pt-10">
-      <button className="bg-[#2C9CF0] px-8 rounded-md py-2  ">
+      <button className="bg-[#2C9CF0] px-8 rounded-md py-2 text-white  ">
         See More
       </button>
       </div>
