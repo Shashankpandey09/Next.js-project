@@ -1,16 +1,22 @@
 import PlayersCard from "./PlayersCard";
 import data,{ banner } from "../../data";
 import Advertisement from "./Advertisement";
-
-const Sports: React.FC = () => {
+ 
+interface Props{
+  isLightTheme:boolean;
+}
+const Sports: React.FC<Props> = ({isLightTheme}) => {
+  
   return (
-    <div className="text-white md:min-h-[673px] w-[90vw]">
+    <div className={`${isLightTheme?"text-black":"text-white "} md:min-h-[673px] w-[90vw] mb-10 `}>
       <div className="border-b-2  md:ml-20 mb-4 border-[#738FFF] w-fit">
         <h1 className="text-2xl font-semibold pt-9">Sports</h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-3 p-4">
+      <div className="flex flex-wrap justify-center gap-3  p-4">
         {data.map((item, index) => (
-          <PlayersCard key={index} {...item} />
+          <div className={`${isLightTheme?"bg-white":" bg-[#3B3E47] "}`}  key={index}>
+          <PlayersCard isLightTheme={  isLightTheme}  {...item} />
+          </div>
         ))}
         <Advertisement {...banner}/>
       </div>

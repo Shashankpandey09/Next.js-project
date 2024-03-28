@@ -6,18 +6,19 @@ interface Props {
   events: number;
   imageUrl: string;
   sports: string;
+  isLightTheme:boolean;
 }
 
-const PlayersCard: React.FC<Props> = ({ id, TeamName, events, imageUrl, sports }) => {
+const PlayersCard: React.FC<Props> = ({ id, TeamName, events, imageUrl, sports,isLightTheme }) => {
   return (
-    <div className="flex justify-center md:w-auto items-center bg-[#3B3E47] pt-2 shadow-lg px-2" key={id}>
+    <div className={`flex justify-center md:w-auto items-center   pt-2 shadow-lg px-2 `} key={id}>
       <div>
         {/* Card content */}
         <div className='image flex items-center flex-col'>
           <img src={imageUrl} alt={TeamName} className="w-full h-[385px] object-cover" />
           <h2 className="text-lg self-start capitalize font-semibold py-1">{TeamName}</h2>
         </div>
-        <div className="self-start bg-[#292B32] pt-1 mb-2 h-[54px] rounded-md flex justify-around">
+        <div className={`self-start ${isLightTheme?"bg-[#F7F7F8]":"bg-[#292B32]"} pt-1 mb-2 h-[54px] rounded-md flex justify-around`}>
         
           <div>
           <p className="text-sm opacity-60">Total Events</p>
