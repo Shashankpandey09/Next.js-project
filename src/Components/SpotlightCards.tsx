@@ -8,7 +8,7 @@ interface Props{
 }
 const SpotlightCards:React.FC<Props> = ({imageUrl,teamName,collectionType,location,isLightTheme}) => {
   return (
-   <div className={`h-[624px]  w-[257px] ${isLightTheme&&"bg-[#ffff]"} `}>
+   <div className={`h-[624px]  w-[257px] ${isLightTheme?"bg-[#ffff] text-white":"bg-[#3B3E47]"} `}>
   <div className="image   ">
   <img src={imageUrl} alt={teamName} className="object-contain w-full pb-0 h-full " />
    
@@ -18,7 +18,7 @@ const SpotlightCards:React.FC<Props> = ({imageUrl,teamName,collectionType,locati
     <div className={`w-[20px] h-[20px] ${isLightTheme?"bg-gradient-to-b from-[#F9F8FF] to-[#F3F9FF]":"bg-gradient-to-r from-[#18282A] to-[#221A2C]"}  absolute translate-x-[12px] right-0 top-[-8px] rounded-full`}></div>
   <DottedLines/>
   </div>
-    <div>
+    <div className={`${isLightTheme?"text-black":"text-white"}`}>
   <h1 className="font-semibold text-xl  line-height-[20px] my-3">
   {teamName}
 </h1>

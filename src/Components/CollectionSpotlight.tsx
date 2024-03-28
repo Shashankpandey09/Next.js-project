@@ -5,7 +5,7 @@
 }
  const CollectionSpotlight: React.FC<Props>  = ({isLightTheme}) => {
   return (
-    <div className={`md:w-[90vw] w-fit  min-h-[900px] flex flex-col items-center ${isLightTheme?"bg-gradient-to-b from-[#F9F8FF] to-[#F3F9FF]":"bg-gradient-to-br from-[#18282A] to-[#221A2C]"}  `}>
+    <div className={`md:w-[90vw] w-fit  min-h-[900px] flex flex-col items-center ${isLightTheme?"bg-gradient-to-b from-[#F9F8FF] to-[#F3F9FF]":"bg-gradient-to-br from-[#18282A] to-[#221A2C] text-white"}  `}>
       <div className=" max-w-[1085.75px] w-full text-center relative  m-auto min-h-[798px] ">  
       <div className='absolute top-1/2 transform -translate-y-1/2 right-0'>
         <div className='w-[36.75px] h-[49px]  border border-[#2C9CF0] flex justify-center items-center'>
