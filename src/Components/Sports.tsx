@@ -15,7 +15,7 @@ const Sports: React.FC<Props> = ({isLightTheme}) => {
       </div>
       <div className="flex flex-wrap justify-center gap-3  p-4">
         {data.map((item, index) => (
-          <div className={`${isLightTheme?"bg-white":" bg-[#3B3E47] "}`}  key={index}>
+          <div className={`${isLightTheme?"bg-white":"bg-[#3B3E47] "}`}  key={index}>
           <PlayersCard isLightTheme={  isLightTheme}  {...item} />
           </div>
         ))}
