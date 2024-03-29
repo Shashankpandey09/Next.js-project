@@ -5,7 +5,7 @@ import Sports from '@/Components/Sports';
 import SpotLight from '@/Components/CollectionSpotlight';
 export default function Home() {
  
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState(false);
 
   const toggleTheme = () => {
     setIsLightTheme(!isLightTheme);
