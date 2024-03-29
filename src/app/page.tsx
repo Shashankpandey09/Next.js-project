@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Sports from '@/Components/Sports';
 import SpotLight from '@/Components/CollectionSpotlight';
-import "./globals.css";
 export default function Home() {
  
   const [isLightTheme, setIsLightTheme] = useState(false);
