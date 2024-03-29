@@ -1,3 +1,4 @@
+"use client";
 import PlayersCard from "./PlayersCard";
 import data,{ banner } from "../../data";
 import Advertisement from "./Advertisement";
